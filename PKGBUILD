@@ -28,7 +28,7 @@ prepare() {
 }
 
 build() {
-  arch-meson thunar build
+  arch-meson thunar build -Dthunar-tpa=disabled
   meson compile -C build
 }
 
