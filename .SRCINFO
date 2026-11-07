@@ -1,0 +1,31 @@
+pkgbase = thunar-admin-git
+	pkgdesc = Thunar File Manager patched for UCA custom actions on admin:// URIs
+	pkgver = 4.21.6.256.g92d623b57
+	pkgrel = 1
+	url = https://gitlab.xfce.org/xfce/thunar
+	arch = x86_64
+	license = GPL-2.0-or-later
+	license = LGPL-2.1-or-later
+	makedepends = git
+	makedepends = meson
+	makedepends = ninja
+	makedepends = gobject-introspection
+	makedepends = xfce4-dev-tools
+	makedepends = python
+	depends = exo
+	depends = libxfce4ui
+	depends = libpng
+	depends = desktop-file-utils
+	depends = libgudev
+	depends = libnotify
+	depends = pcre2
+	depends = hicolor-icon-theme
+	depends = libglib-2.0.so
+	provides = thunar
+	conflicts = thunar
+	source = git+https://gitlab.xfce.org/xfce/thunar.git#branch=master
+	source = patch_uca.py
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = thunar-admin-git

@@ -1,0 +1,7 @@
+.codegraph/
+src/
+pkg/
+thunar/
+*.pkg.tar.zst
+*.log
+build/

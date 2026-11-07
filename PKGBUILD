@@ -1,6 +1,6 @@
 # Maintainer: Local System Administrator
 pkgname=thunar-admin-git
-pkgver=4.21.6.254.g4dc0c07eb
+pkgver=4.21.6.256.g92d623b57
 pkgrel=1
 pkgdesc="Thunar File Manager patched for UCA custom actions on admin:// URIs"
 arch=('x86_64')
@@ -18,7 +18,7 @@ source=('git+https://gitlab.xfce.org/xfce/thunar.git#branch=master'
 sha256sums=('SKIP' 'SKIP')
 
 pkgver() {
-  cd "$srcdir/thunar" 2>/dev/null || cd "$srcdir"
+  cd "$srcdir/thunar"
   git describe --long --tags 2>/dev/null | sed 's/^thunar-//;s/-/./g' || printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
@@ -28,6 +28,7 @@ prepare() {
 }
 
 build() {
+  rm -rf build
   arch-meson thunar build -Dthunar-tpa=disabled
   meson compile -C build
 }
