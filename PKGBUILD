@@ -13,7 +13,7 @@ depends=(
 makedepends=('git' 'meson' 'ninja' 'gobject-introspection' 'xfce4-dev-tools' 'python')
 provides=('thunar')
 conflicts=('thunar')
-source=('git+https://gitlab.xfce.org/xfce/thunar.git#branch=master'
+source=('git+https://gitlab.xfce.org/xfce/thunar.git#branch=xfce-4.20'
         'patch_uca.py')
 sha256sums=('SKIP' 'SKIP')
 
