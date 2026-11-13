@@ -10,7 +10,7 @@ depends=(
   'exo' 'libxfce4ui' 'libpng' 'desktop-file-utils' 'libgudev'
   'libnotify' 'pcre2' 'hicolor-icon-theme' 'libglib-2.0.so'
 )
-makedepends=('git' 'xfce4-dev-tools' 'gobject-introspection' 'python')
+makedepends=('git' 'xfce4-dev-tools' 'glib2-devel' 'gobject-introspection' 'python')
 provides=('thunar')
 conflicts=('thunar')
 source=('git+https://gitlab.xfce.org/xfce/thunar.git#branch=xfce-4.20'

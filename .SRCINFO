@@ -8,6 +8,7 @@ pkgbase = thunar-admin-git
 	license = LGPL-2.1-or-later
 	makedepends = git
 	makedepends = xfce4-dev-tools
+	makedepends = glib2-devel
 	makedepends = gobject-introspection
 	makedepends = python
 	depends = exo
